@@ -6,6 +6,6 @@ export default defineConfig({
     path: "prisma/migrations",
   },
   datasource: {
-    url: "mysql://root:root@localhost:3306/riyadvi",
+    url: process.env.DATABASE_URL!,
   },
 });
